@@ -1,0 +1,24 @@
+﻿@model FormData
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+ <form method="post" asp-controller="FormData" asp-action="Chek">
+        <div>
+            <div><label asp-for="Name">ФИО</label>
+            <input asp-for="Name">
+            <span asp-validation-for="Name"></span></div>
+            
+            
+            <div><label asp-for="Number">Номер телефона</label>
+            <input asp-for="Number">
+            <span asp-validation-for="Number"></span></div>
+            
+            
+            <div><label asp-for="Comment">Комментарий</label>
+            <input asp-for="Comment">
+            <span asp-validation-for="Comment"></span></div>
+            
+            <div><input type="submit" value="ОТПРАВИТЬ" /></div>
+        </div>
+    </form>
